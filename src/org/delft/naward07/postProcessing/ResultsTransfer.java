@@ -14,6 +14,10 @@ import java.util.Map;
 
 import org.delft.naward07.Utils.MapUtil;
 
+/**
+ * @author Feng Wang
+ */
+
 public class ResultsTransfer {
 	
 	private final String INDEX = "index";

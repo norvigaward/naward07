@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-__author__ = 'wdwind'
+__author__ = 'Feng Wang'
 
 import numpy as np
 from matplotlib import mlab

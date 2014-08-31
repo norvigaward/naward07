@@ -1,3 +1,5 @@
+__author__ = 'Feng Wang'
+
 from os import walk, path
 from numpy import vstack,array,genfromtxt,zeros
 from numpy.random import rand

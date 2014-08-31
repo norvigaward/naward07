@@ -1,5 +1,5 @@
 /**
- * Created by wdwind on 14-7-14.
+ * Created by Feng Wang on 14-7-14.
  */
 
 package org.delft.naward07.MapReduce.hadoop.warc;

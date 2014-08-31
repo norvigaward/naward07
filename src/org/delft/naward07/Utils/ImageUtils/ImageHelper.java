@@ -1,5 +1,5 @@
 /**
- * Created by wdwind on 14-6-11.
+ * Created by Feng Wang on 14-6-11.
  */
 package org.delft.naward07.Utils.ImageUtils;
 

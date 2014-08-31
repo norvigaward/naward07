@@ -10,7 +10,7 @@ import java.util.List;
 import com.google.gson.Gson;
 
 /**
- * Created by wdwind on 14-7-22.
+ * Created by Feng Wang on 14-7-22.
  */
 
 public class ImagesInfo implements Comparable<ImagesInfo> {

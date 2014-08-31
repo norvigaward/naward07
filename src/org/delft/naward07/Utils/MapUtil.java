@@ -1,7 +1,7 @@
 package org.delft.naward07.Utils;
 
 /**
- * Created by wdwind on 14-7-22.
+ * Created by Feng Wang on 14-7-22.
  */
 
 import java.util.*;

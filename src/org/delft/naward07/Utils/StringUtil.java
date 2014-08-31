@@ -3,7 +3,7 @@ package org.delft.naward07.Utils;
 import java.math.BigInteger;
 
 /**
- * Created by wdwind on 14-8-27.
+ * Created by Feng Wang on 14-8-27.
  */
 
 public class StringUtil {

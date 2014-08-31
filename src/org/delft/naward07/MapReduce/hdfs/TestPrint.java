@@ -1,18 +1,3 @@
-/**
- * Copyright 2014 SURFsara
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *    http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package org.delft.naward07.MapReduce.hdfs;
 
 import org.delft.naward07.Utils.MapUtil;
@@ -34,12 +19,7 @@ import org.apache.hadoop.fs.Path;
 
 
 /**
- * Accessing HDFS needs to be performed with privileges for a principal (user)
- * enabled. This is an implementation of a PriviligedAction that, as the logged
- * in user, parses a warc file and dumps the headers of each record to standard
- * out.
- * 
- * @author mathijs.kattenberg@surfsara.nl
+ * @author Feng Wang
  */
 public class TestPrint implements PrivilegedAction<Object> {
     private final int HASH = 0;

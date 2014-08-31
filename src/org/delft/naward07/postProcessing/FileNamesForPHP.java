@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * Created by wdwind on 14-8-30.
+ * Created by wdwind
  */
 
 public class FileNamesForPHP {

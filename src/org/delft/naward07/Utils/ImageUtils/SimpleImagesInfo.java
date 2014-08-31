@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Created by wdwind on 14-8-3.
+ * Created by Feng Wang on 14-8-3.
  */
 
 public class SimpleImagesInfo implements Comparable<SimpleImagesInfo> {

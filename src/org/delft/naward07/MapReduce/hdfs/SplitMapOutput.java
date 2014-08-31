@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
 import java.security.PrivilegedAction;
 
 /**
- * Created by wdwind on 14-8-25.
+ * Created by Feng Wang on 14-8-25.
  */
 
 public class SplitMapOutput implements PrivilegedAction<Object> {

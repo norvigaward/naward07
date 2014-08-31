@@ -3,6 +3,10 @@ package org.delft.naward07.postProcessing;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Feng Wang
+ */
+
 public class ItemIndices implements Comparable<ItemIndices> {
 	private int num;
 	private List<Integer> indices;

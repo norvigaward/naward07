@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# __author__ = 'wdwind'
+__author__ = 'Feng Wang'
 
 from pylab import plot, show
 from numpy import vstack, array, genfromtxt, zeros, genfromtxt

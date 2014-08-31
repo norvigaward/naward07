@@ -1,4 +1,6 @@
 # -*- encoding: utf-8 -*-
+__author__ = 'Feng Wang'
+
 import numpy as np
 #import matplotlib.pyplot as plt
 from matplotlib import mlab

@@ -9,6 +9,10 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Created by Feng Wang
+ */
+
 class ImTrendsReducer extends Reducer<Text, Text, Text, Text> {
 
     @Override

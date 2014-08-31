@@ -1,3 +1,5 @@
+__author__ = 'Feng Wang'
+
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import mlab
@@ -28,7 +30,8 @@ def clustering(filepath, k, dist_measure, PLOT):
     else:
         ite_num = 1
 
-    clusterid, error, nfound = pc.kcluster(data, nclusters=k, mask=None, weight=None, transpose=0, npass=ite_num, method='a', dist=dist_measure, initialid=None)
+    clusterid, error, nfound = pc.kcluster(data, nclusters=k, mask=None, weight=None, transpose=0, npass=ite_num, method='a', dist=dist_measure, initialid=None)
+
 
     if PLOT is False:
         return clusterid
