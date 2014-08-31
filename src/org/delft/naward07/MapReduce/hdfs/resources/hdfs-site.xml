@@ -1,0 +1,18 @@
+  <configuration>
+    <property>
+    <name>dfs.namenode.kerberos.principal</name>
+    <value>nn/_HOST@CUA.SURFSARA.NL</value>
+  </property>
+    <property>
+    <name>dfs.datanode.kerberos.principal</name>
+    <value>dn/_HOST@CUA.SURFSARA.NL</value>
+  </property>
+    <property>
+    <name>dfs.datanode.address</name>
+    <value>0.0.0.0:1004</value>
+  </property>
+    <property>
+    <name>dfs.datanode.http.address</name>
+    <value>0.0.0.0:1006</value>
+  </property>
+</configuration>

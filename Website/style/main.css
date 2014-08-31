@@ -1,0 +1,361 @@
+/* 2009 - 2010 (c) | ez-css.org
+ * ez-start-2A ::  version 1.0 (03142010)
+ *
+ * Two columns with header and footer, sidebar on the right hand side, main content comes first. 
+ *
+ *
+ * You should replace the following rule with your own reset or base styles sheet
+ * visit: http://carsonified.com/blog/design/setting-rather-than-resetting-default-styling
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * To set the width of the main wrapper
+ */
+ 
+#wrapper {width: 750px;}
+
+/*
+ * You can use this wrapper for the faux-column technique
+ * Check http://www.alistapart.com/articles/fauxcolumns/
+ */
+
+#body {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #555;
+	border-top:1px solid #555;
+}
+
+/*
+ * This element needs a width
+ */
+
+#article {
+	width: 70%; 
+	padding: 15px 15px 15px 0;
+	border-right: 1px solid #555;
+}
+
+/*
+ * Unlike the first first column, this element does *not* need a width
+ */
+
+#aside {
+	padding: 15px 0 15px 15px;
+	border-left:1px solid #555;
+}
+
+/**********************************************************************************
+ Below this comment are the core rules, there should be no need to edit any of them
+ **********************************************************************************
+ *
+ * auto-centering in IE 5
+ * we reset this value in the next rule so content is left aligned. 
+ */
+ 
+body {
+	text-align: center;
+	color: #34495e;
+	font-family: "Calibri";
+	background-image: url(blur_collage4.jpg);
+}
+
+h2 {
+	font-size: 1.7em;
+}
+
+/* 
+ * margin "auto" is to center this element (we set the width in a separate rule near the top of this styles sheet).
+ * "text-align" is to reset the declaration from "body".
+ * "inline:block" is to create a block-formatting context (the "width" does that in IE).
+ */
+
+#wrapper {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+	display: inline-block;
+	width: 850px;
+	background-color: #FFFFFF;
+	padding: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border: 11px solid rgba(0, 0, 0, 0.2);
+}
+
+/*
+ * this is the clearfix method
+ * we rely on this to contain floats in these elements 
+ */
+ 
+#header:after,
+#body:after,
+#footer:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+}
+
+/*
+ * hacks for IE
+ * "min-height" triggers "hasLayout" in IE 7, 
+ * "height" is the trigger for IE 5 and 6.
+ */
+
+#header,
+#body,
+#aside,
+#footer {min-height: 0;} 
+* html #header,
+* html #body,
+* html #aside,
+* html #footer {height: 1%;}
+
+/*
+ * this element must create a new block formatting context.
+ * by default, we rely on "overflow:hidden", but if this creates an issue with your design, then apply to this element one of the following rules 
+ * ez-oa
+ * ez-dt 
+ * ez-it
+ * ez-tc
+ * ez-ib
+ */
+ 
+#aside {overflow: hidden;}
+
+/*
+ * rules to apply to the right column (#aside) if the styling above (overflow:hidden) creates issues with your design
+ */
+
+.ez-oa {overflow: visible; overflow: auto;}
+.ez-dt {overflow: visible; display: table;}
+.ez-it {overflow: visible; display: inline-table;}
+.ez-tc {overflow: visible; display: table-cell;}
+.ez-ib {overflow: visible; display: inline-block;}
+
+/* 
+ * 1st column
+ * the negative margin is to allow the border of the two columns to overlap
+ */
+ 
+#article {
+	float: left;
+  margin-right: -1px;
+}
+
+/* 
+ * the following fixes the "3px jog bug"
+ */
+
+* html #article {margin-right: -4px;}
+
+/**********************************************************************************
+ ***   The above are core rules, there should be no need to edit any of them    ***
+**********************************************************************************/
+
+/* table {
+  border-collapse: collapse;
+}
+tr { 
+  border: solid;
+  border-width: 1px 0;
+} */
+
+#main_time_frame {
+	position: absolute;
+	width: 230px;
+}
+
+#main_time {
+	/* float: left; */
+/* 	border-right:1px solid #34495e;
+	border-top:1px solid #34495e;
+	border-bottom:1px solid #34495e; */
+    /* width:85px; */
+    /* top:2px; */
+	font-size: 2em;
+	font-weight: bold;
+	border-bottom: 1px solid #34495e;
+	margin-left: -16px;
+	padding-bottom: 18px;
+	margin-right: 6px;
+/* 	background-color: #34495e;
+	color: red; */
+    /* height: 200px;
+    overflow: scroll; */
+}
+
+#main_time p {
+	margin-left: 16px;
+}
+
+#main_time p  a{
+	font-size: 0.7em;
+	font-style: italic;
+}
+
+.cluster{
+	width: 611px;
+	padding-bottom: 18px;
+	border-bottom: 1px solid #34495e;
+	margin-right: -52px;
+	margin-bottom: 8px;
+}
+
+.cluster .index{
+	font-size: 2em;
+	font-weight: bold;
+	/*border-bottom: 1px solid #34495e;*/
+	/*margin-left: -16px;*/
+	/*padding-bottom: 18px;*/
+}
+
+.off{
+	color: #BDBDBD;
+}
+
+.navigator {
+	text-align: center;
+}
+
+.navigator span{
+	padding-left: 60px;
+}
+
+#periods{
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+#periods #title{
+	padding-bottom: 8px;
+/*	border-bottom: 1px solid #34495e;*/
+	margin-right: -52px;
+	margin-bottom: 8px;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#periods #content{
+    padding-left: 15px;
+}
+
+#periods .year{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#periods .desc{
+    padding-bottom: 13px;
+}
+
+#periods .desc span{
+	font-size: 0.8em;
+	padding-right: 16px;
+}
+
+#gallery_frame{
+	/* margin-left: 140px; */
+	float: left;
+	/* width: 500px; */
+}
+
+.img_desc{
+	float: left;
+	margin-left: 20px;
+}
+
+.img_desc p {
+	margin-top: 20px;
+}
+
+.clear {
+	clear: both;
+}
+
+.gallery{
+	margin-bottom: 10px;
+}
+
+#stat{
+	padding-bottom: 18px;
+	border-bottom: 1px solid #34495e;
+	margin-bottom: 8px;
+	margin-right: -16px;
+}
+
+#stat #title{
+	padding-bottom: 5px;
+/*	border-bottom: 1px solid #34495e;*/
+	margin-right: -52px;
+	margin-bottom: 5px;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#stat #desc span{
+	font-size: 1.2em;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#clusters_fig_1 {
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+#clusters_fig_2 {
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+#top{
+	padding-bottom: 5px;
+/*	border-bottom: 1px solid #34495e;*/
+	margin-bottom: 5px;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h1 {
+	display: block;
+	font-size: 3.5em;
+	font-weight: bold;
+}
+
+h1 a:link {
+    text-decoration: none;
+	color: #34495e;
+}
+
+h1 a:visited {
+    text-decoration: none;
+	color: #34495e;
+}
+
+h1 a:hover {
+    text-decoration: none;
+	color: #34495e;
+}
+
+h1 a:active {
+    text-decoration: none;
+	color: #34495e;
+}
+
+#aside h2{
+	margin-bottom: 8px;
+}
+
+.counter {
+	font-size: 1.5em;
+	font-weight: bold;
+}

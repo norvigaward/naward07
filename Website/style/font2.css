@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'Lobster';
+	src: url('./Lobster.eot');
+	src: local('Lobster'), url('./Lobster.woff') format('woff'), url('./Lobster.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_18786">Text with this font applied</p> */
+.fontsforweb_fontid_18786 {
+	font-family: 'Lobster' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
