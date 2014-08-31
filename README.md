@@ -1,6 +1,7 @@
 ImTrends - The Trends of Images in World Wide Web
 ==================
-naward07 - Feng Wang, Hong Huang, Vincent Gong
+naward07 - [Feng Wang](mailto: F.Wang-6@student.tudelft.nl), [Hong Huang](mailto: H.Huang-3@student.tudelft.nl), [Vincent Gong](mailto: X.Gong@student.tudelft.nl)
+
 --------
 
 View the demo website of [ImTrends!](http://breezeandstorm.com/naward07/index.php)
